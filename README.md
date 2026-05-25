@@ -1,80 +1,137 @@
-# Python CRUD Application for [Business Domain]
 
-A comprehensive Python application for managing [Data Entity] data with Create, Read, Update, and Delete (CRUD) operations.
+# Python CRUD Application for Bakery & Coffee Shop
+
+A terminal-based Python application for managing Bakery & Coffee Shop menu data using Create, Read, Update, and Delete (CRUD) operations.
 
 ## Business Understanding
 
-This project caters to the [Industry/Business Domain] industry, specifically addressing the need to manage [Data Entity] data efficiently. [Data Entity] plays a crucial role in [Explain the importance of data entity in business processes].
+This project was developed to help Bakery & Coffee Shop businesses manage menu data and sales transactions more efficiently. Product data such as menu name, category, price, stock, and total sales plays an important role in supporting store operations and monitoring sales performance.
 
-**Benefits:**
+## Benefits
 
-* Improved data accuracy and consistency
-* Streamlined data management processes
-* Enhanced decision-making through readily available data
-* ... (List additional benefits relevant to the business)
+* Simplifies bakery and coffee menu management
+* Helps monitor product stock
+* Makes product searching and updating easier
+* Supports the purchasing transaction process
+* Provides simple sales reports
+* Reduces manual recording errors
 
-**Target Users:**
+## Target Users
 
-This application is designed for [Target Users] (e.g., sales representatives, inventory managers, customer support agents) within the organization to facilitate their [Tasks/Activities] related to [Data Entity].
+This application is designed for:
+* Cashiers
+* Store staff
+* Bakery/Coffee shop owners
 
-## Features
+To support activities such as:
+* Menu management
+* Purchase transactions
+* Stock monitoring
+* Sales reporting
 
-* **Create:**
-    * Add new [Data Entity] entries with essential details like [List relevant fields].
-    * Implement validation rules to ensure data integrity (if applicable, e.g., unique identifiers, data type checks).
-* **Read:**
-    * Search and retrieve specific [Data Entity] records by applying filters based on [Searchable fields].
-    * Display comprehensive information for each [Data Entity] in a user-friendly format.
-    * Integrate pagination and sorting capabilities for large datasets (if applicable).
-* **Update:**
-    * Modify existing [Data Entity] data to reflect changes in [Attributes/Properties].
-    * Provide clear confirmation or error messages based on update success or failure.
-* **Delete:**
-    * Allow for the removal of unwanted [Data Entity] records with appropriate authorization checks (if applicable).
-    * Implement soft delete functionality to prevent permanent data loss (optional, depending on business needs).
-    * Consider offering data archiving capabilities (optional).
-* **Security:**
-    * Implement user authentication and authorization mechanisms (if sensitive data is involved) to control access to different CRUD operations.
-    * ... (Specify additional security features as needed)
-* **Reporting:**
-    * Generate reports or summaries based on [Data Entity] data to support [Business Functions] (optional).
-    * Export data in various formats (e.g., CSV, Excel) for further analysis (optional).
 
-## Installation
 
-1. **Prerequisites:**
-    * Python version (specify the required version)
-    * Additional dependencies (list any required packages)
+# Features
 
-2. **Installation:**
-    ```bash
-    git clone https://github.com/<your-username>/<your-repo-name>.git
-    cd <your-repo-name>
-    pip install -r requirements.txt  # If using a requirements.txt file
-    ```
+## Create Menu
+Add new menu items with information such as:
+* Product ID
+* Product name
+* Category
+* Stock
+* Price
+* Total products sold
 
-3. **Database Setup (if applicable):**
-    Follow specific instructions for configuring your database connection, aligning with the business's chosen database management system.
+## Read Menu
+* Display all menu items
+* Search products by menu name
 
-## Usage
+## Update Menu
+Update product information such as:
+* Product name
+* Category
+* Stock
+* Price
+* Total products sold
 
-1. **Run the application:**
-    ```bash
-    python main.py
-    ```
+## Delete Menu
+Delete products based on Product ID.
 
-2. **CRUD Operations:**
-    * **Create:** Add a new [Data Entity] record, for example, a new customer in a customer management system, providing details like name, contact information, and preferences.
-    * **Read:** Search and retrieve customer information by name, ID, or other relevant criteria.
-    * **Update:** Modify customer details, such as updating their address or contact details.
-    * **Delete:** Remove a customer record from the system (with appropriate authorization, if applicable).
+## Buy Product
+* Purchase products
+* Add products to the shopping cart
+* Automatically reduce stock
+* Calculate subtotal and total payment
 
-## Data Model
-This project utilizes a [Data Structure] (e.g., relational database, JSON documents) to represent [Data Entity] data. The following fields are typically stored:
-   * [Field 1]: (Data type) - Description of the field's purpose in the business context.
-   * [Field 2]: (Data type) - Description of the field's purpose in the business context.
-   * ... (List all relevant fields)
+## Sales Report
+Display:
+* Total products sold
+* Total revenue for each product
+* Overall total revenue
 
-## Contributing
-We welcome contributions to this project! Please feel free to open a pull request, sent to [your_email] or submit an issue if you encounter any problems or have suggestions for improvements.
+---
+
+# Installation
+
+## Prerequisites
+* Python 3.x
+
+## Run Application
+
+```bash
+python main.py
+```
+
+---
+
+# Usage
+
+## Main Menu
+
+1. View Menu List
+2. Add Menu Item
+3. Update Menu Item
+4. Delete Menu Item
+5. Buy Product
+6. Sales Report
+7. Exit Program
+
+---
+
+# Data Model
+
+Product data is stored using Python Lists and Dictionaries.
+
+## Product Fields
+
+ Field              Type     Description 
+ product_id         string   Unique product ID 
+ product_name       string   Product name 
+ product_category   string   Product category 
+ product_stock      integer  Product stock quantity 
+ product_price      integer  Product price 
+ product_total_sold integer  Total products sold 
+
+
+
+# Technologies Used
+
+* Python
+* List
+* Dictionary
+* Looping
+* Conditional Statements
+* Functions
+
+
+
+# Future Improvements
+
+* Add database integration
+* Login authentication
+* Export reports to Excel/CSV
+* GUI interface
+* Digital payment system
+
+
 
